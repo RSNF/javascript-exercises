@@ -1,5 +1,7 @@
-const repeatString = function() {
-
+const repeatString = function(str, num) {
+    if (num == 0) return "";
+    else if (num < 0) return "ERROR";
+    return str + repeatString(str, num - 1);
 };
 
 // Do not edit below this line
